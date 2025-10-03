@@ -1,5 +1,6 @@
 import requests
 import json
+from un_indicators import UN_INDICATORS
 
 # ENDPOINTS
 countries_endpoint = "https://api.worldbank.org/v2/country/?format=json"
@@ -7,9 +8,10 @@ gdp_endpoint = "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.C
 population_endpoint = "https://api.worldbank.org/v2/country/all/indicator/SP.POP.TOTL?date=1990:2024&format=json"
 base_api = "https://search.worldbank.org/api/v3/wds?format=json/country"
 
-worldbank_indicators = [
+# example UN INDICATOR API CALL
+# https://unstats.un.org/SDGAPI/v1/sdg/Series/Data?seriesCode=SH_HLF_EMED&timePeriod=2015
+# OFFICIALLY STARTED 2015
 
-]
 
 # world bank countries list
 def get_countries_list():
